@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@EnableJpaRepositories("com.pavelgo.persistence.repo")
-@EntityScan("com.pavelgo.persistence.repo")
 @SpringBootApplication
+@EntityScan("com.pavelgo.persistence.model")
+@EnableJpaRepositories("com.pavelgo.persistence.repo")
 public class Application {
 
     public static void main(String[] args) {
